@@ -1,0 +1,15 @@
+# --- Environments ---
+.env
+.venv
+env/
+venv/
+
+# --- Python & Jupyter ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- IDE & OS Files ---
+.DS_Store
+.vscode/
+.idea/
