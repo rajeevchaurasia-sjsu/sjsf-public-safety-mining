@@ -23,17 +23,17 @@ A comprehensive **comparative data mining analysis** of public safety patterns i
 
 We investigate three analytical dimensions across both cities:
 
-1. **Temporal Analysis** 🕐 (Rajeev)
-   - Compare weekly and seasonal patterns
-   - Identify temporal similarities and differences
+1.  **Temporal Analysis** 🕐 (Rajeev)
+    -   Compare weekly and seasonal patterns
+    -   Identify temporal similarities and differences
 
-2. **Spatial Analysis** 🗺️ (Tushar - SF, Jeevan - SJ)
-   - DBSCAN clustering for hotspot identification
-   - Compare dense city (SF) vs. sprawling city (SJ) patterns
+2.  **Spatial Analysis** 🗺️ (Tushar - SF, Jeevan - SJ)
+    -   DBSCAN clustering for hotspot identification
+    -   Compare dense city (SF) vs. sprawling city (SJ) patterns
 
-3. **Categorical Analysis** 📊 (Vatsal)
-   - Association rule mining (Apriori)
-   - Cross-city incident type relationship comparison
+3.  **Categorical Analysis** 📊 (Vatsal)
+    -   Association rule mining (Apriori)
+    -   Cross-city incident type relationship comparison
 
 ## Repository Structure
 
@@ -41,19 +41,19 @@ We investigate three analytical dimensions across both cities:
 sjsf-public-safety-mining/
 ├── data/
 │   ├── raw/                           # Raw data from both cities
-│   │   ├── sfpd_incidents.csv        # San Francisco data
-│   │   └── sjpd_calls.csv            # San Jose data (to be added)
+│   │   ├── sfpd_incidents.csv         # San Francisco data
+│   │   └── sj_calls_for_service       # San Jose data
 │   └── processed/                     # Cleaned, harmonized datasets
 │       ├── sf_incidents_cleaned.csv   # Preprocessed SF data
 │       └── sj_calls_cleaned.csv       # Preprocessed SJ data
 ├── notebooks/
-│   ├── 01_data_preparation.ipynb      # Data cleaning & harmonization
-│   ├── 02_sf_eda.ipynb               # San Francisco analysis
-│   ├── 03_sj_eda.ipynb               # San Jose analysis (Jeevan)
-│   ├── 04_sf_spatial_analysis.ipynb   # SF DBSCAN clustering (Tushar)
-│   ├── 05_sj_spatial_analysis.ipynb   # SJ DBSCAN clustering (Jeevan)
-│   ├── 06_association_mining.ipynb    # Cross-city categorical analysis (Vatsal)
-│   └── 07_comparative_synthesis.ipynb # Final comparative insights
+│   ├── 01_data_preparation_sf.ipynb   # Data cleaning & harmonization (SF)
+│   ├── 01_data_preparation_sj.ipynb   # Data cleaning & harmonization (SJ)
+│   ├── 02_comparative_temporal_analysis.ipynb # (Rajeev)
+│   ├── 03_spatial_analysis_sf.ipynb   # SF DBSCAN clustering (Tushar)
+│   ├── 04_spatial_analysis_sj.ipynb   # SJ DBSCAN clustering (Jeevan)
+│   ├── 05_categorical_analysis.ipynb  # Cross-city categorical analysis (Vatsal)
+│   └── 06_comparative_synthesis.ipynb # Final comparative insights (All)
 ├── src/                               # Reusable Python modules
 ├── ONBOARDING.md                      # Team setup guide
 ├── README.md                          # This file
@@ -63,12 +63,12 @@ sjsf-public-safety-mining/
 ## Getting Started
 
 Refer to [ONBOARDING.md](ONBOARDING.md) for:
-- Environment setup
-- Data acquisition instructions
-- Team workflow guidelines
+-   Environment setup
+-   Data acquisition instructions
+-   Team workflow guidelines
 
 ---
 
 **Course:** CMPE 255 - Data Mining  
 **Institution:** San José State University  
-**Last Updated:** October 2025
+**Last Updated:** November 2025
