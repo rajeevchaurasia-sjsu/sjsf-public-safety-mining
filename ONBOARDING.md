@@ -24,24 +24,32 @@ cd sjsf-public-safety-mining
 ```
 
 #### **Step 2: Download the Data**
+
+##### San Francisco:
 1. Go to the [DataSF SFPD Incidents page](https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783).
 2. Click **Export** and download the data as a CSV file.
 3. Inside the project folder, create a new directory structure: `data/raw/`.
 4. Move the downloaded file into that new folder and rename it to `sfpd_incidents.csv`.
 5. The final path should be: `sjsf-public-safety-mining/data/raw/sfpd_incidents.csv`.
 
+##### San Jose:
+1. Go to the [City of San Jose - Police Calls for Service](https://data.sanjoseca.gov/dataset/police-calls-for-service).
+2. Inside the project folder, create a new directory structure: `data/raw/sj_calls_for_service`.
+3. One by one, download the files from 2018 - 2025 into that new folder.
+4. The final path of files should be of the form: `sjsf-public-safety-mining/data/raw/sj_calls_for_service/policecalls20XX.csv`
+
 #### **Step 3: Create & Activate the Virtual Environment**
 We use a virtual environment to keep our project's libraries isolated.
 
 **Create the environment:**
 ```bash
-python3 -m venv venv
+python3 -m venv .venv
 ```
 
 **Activate the environment:**
 * On macOS or Linux:
   ```bash
-  source venv/bin/activate
+  source .venv/bin/activate
   ```
 * On Windows:
   ```bash
